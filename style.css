@@ -1,0 +1,51 @@
+.container{
+	margin:0 auto;
+	position:relative;
+	top:200px;
+	left:40%;
+	
+}
+.effectbtn{
+	color:red;
+	font-size:30px;
+	text-decoration:none;
+	border:3px solid blue;
+	font-weight:800;
+	font-family:arial black;
+	padding:20px 30px;
+	position:relative;
+	background:linear-gradient(#e91e63, #720127);
+    color: white;
+}
+.effectbtn::after{
+	content:"";
+	position:absolute;
+	top:-12px;
+	left:-12px;
+	border-top:4px solid red;
+	border-left:4px solid red;
+	width:20%;
+	height:50%;
+	background:teansparent;
+	transition:0.3s;
+}
+.effectbtn::before{
+	content:"";
+	position:absolute;
+	bottom:-12px;
+	right:-12px;
+	border-bottom:4px solid red;
+	border-right:4px solid red;
+	width:20%;
+	height:50%;
+	background:teansparent;
+	transition:0.3s;
+}
+.effectbtn:hover::after{
+	width:108%;
+	height:124%;
+}
+.effectbtn:hover::before{
+	width:108%;
+	height:124%;
+}
